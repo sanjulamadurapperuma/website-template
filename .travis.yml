@@ -10,13 +10,9 @@ services:
   - docker
 
 install:
-  # Install dependencies for tests
+  # Install dependencies
   - npm ci
 
-before_script:
-  # Start server and client for tests
-  - npm run dev &
-
 script:
-  # Run tests
-  - npm run test
+  # Run server
+  - npm start
