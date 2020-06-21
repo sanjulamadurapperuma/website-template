@@ -1,0 +1,19 @@
+# Set the language
+language: node_js
+
+# Set the Node version
+node_js:
+  - '10'
+
+services:
+  # Use Docker command line
+  - docker
+
+install:
+  # Install dependencies
+  - npm ci
+
+script:
+  # Run server
+  - npm test
+    
