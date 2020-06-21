@@ -15,8 +15,5 @@ install:
 
 script:
   # Run server
-  - npm start
-
-after_script:
-  # Stop server
-  - npm stop  
+  - npm test
+    
